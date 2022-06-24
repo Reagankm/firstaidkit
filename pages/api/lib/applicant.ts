@@ -1,4 +1,5 @@
 export type Applicant = {
     name: string,
-    phone: string
+    phone: string,
+    screener?: string
 };

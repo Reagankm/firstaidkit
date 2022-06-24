@@ -27,7 +27,16 @@
   border: 1px solid black;
   padding-left: 0;
   width: 300px;
+  font-family: monospace;
 }
+
+/*.applicantList:nth-child(1) {*/
+/*  overflow: scroll;*/
+/*}*/
+
+/*.name {*/
+/*  overflow:scroll;*/
+/*}*/
 
 .applicant {
   list-style: none;
@@ -35,9 +44,9 @@
   color: #666;
   display: flex;
   width: 100%;
-  padding: 0;
   border-bottom: 1px solid black;
   background-color: white;
+  overflow: auto;
 }
 
 .applicant:nth-child(odd) {
@@ -52,8 +61,28 @@
   flex: 1 1 50%;
   padding: 10px;
   border-right: 1px solid black;
+  /*overflow: auto;*/
 }
 
 .applicant div:last-child {
   border-right: 0;
+}
+
+.formInput {
+  margin: 10px;
+}
+
+.addApplicant {
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+/* Hide up/down arrows in the phone number input. Note: this works in Firefox but something else is required for Chrome */
+.phoneInput {
+  -moz-appearance: textfield;
 }
